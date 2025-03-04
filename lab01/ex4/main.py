@@ -1,5 +1,4 @@
 from SinhVien import QLSinhVien
-
 def menu():
     qlsv = QLSinhVien()
     while True:
@@ -13,7 +12,6 @@ def menu():
         print("7. Hiển thị danh sách sinh viên")
         print("0. Thoát")
         choice = input("Nhập lựa chọn của bạn: ")
-        
         if choice == '1':
             qlsv.nhap_sinhvien()
         elif choice == '2':
@@ -43,6 +41,5 @@ def menu():
             break
         else:
             print("Lựa chọn không hợp lệ, vui lòng chọn lại.")
-
 if __name__ == "__main__":
     menu()
